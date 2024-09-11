@@ -1,0 +1,249 @@
+
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brawl Stars Ultimate Cheat Hub</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lilita One', cursive;
+    background: #120038;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    background: linear-gradient(45deg, #ff3c3c, #ff9c00, #ffcc00);
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 5px 15px rgba(255, 60, 60, 0.5);
+  }
+
+  h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 3px 3px 0px #120038;
+  }
+
+  .warning {
+    background-color: #ffcc00;
+    color: #120038;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+  }
+
+  .download-button {
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff3c3c, #ff9c00);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 50px;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 60, 60, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .download-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 60, 60, 0.7);
+  }
+
+  .download-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.3s;
+  }
+
+  .download-button:hover::after {
+    left: 100%;
+  }
+
+  .features {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .features h3 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .features ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .features li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+  }
+
+  .features li::before {
+    content: '🌟';
+    margin-right: 10px;
+    font-size: 1.5em;
+  }
+
+  .brawler {
+    position: absolute;
+    pointer-events: none;
+    z-index:99999;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <h1>Brawl Stars Ultimate Cheat Hub</h1>
+  </header>
+  
+  <div class="container">
+    <div class="warning">
+      ⚠️ WARNING: This is an unofficial fan site. Use of cheats may affect your gaming experience!
+    </div>
+    
+    <a href="/download/brawlstars_powerup.zip" class="download-button">DOWNLOAD CHEAT</a>
+    
+    <div class="features">
+      <h3>Legendary Features:</h3>
+      <ul>
+        <li>Auto Dodge</li>
+        <li>Auto Dodge(v2)</li>
+        <li>Auto Spin</li>
+        <li>More Coming Soon...</li>
+      </ul>
+    </div>
+    
+    <p>Join our <a style="color:lime;" href="https://discord.gg/uSBSraAtU5">discord</a> community for cheats.</p>
+  </div>
+
+  <svg class="brawler" style="left: 5%; top: 45%;" width="150" height="150" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#ff9c00"/>
+    <circle cx="35" cy="40" r="5" fill="white"/>
+    <circle cx="65" cy="40" r="5" fill="white"/>
+    <path d="M 30 60 Q 50 80 70 60" stroke="white" stroke-width="5" fill="none"/>
+  </svg>
+
+  <svg class="brawler" style="right: 5%; bottom: 20%;" width="150" height="150" viewBox="0 0 100 100">
+    <rect x="10" y="10" width="80" height="80" fill="#00ff00" rx="10"/>
+    <circle cx="35" cy="40" r="5" fill="white"/>
+    <circle cx="65" cy="40" r="5" fill="white"/>
+    <path d="M 30 70 Q 50 50 70 70" stroke="white" stroke-width="5" fill="none"/>
+  </svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+document.querySelector('.download-button').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.location.href = "https://discord.gg/uSBSraAtU5";
+});
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.querySelector('.stars').appendChild(renderer.domElement);
+
+const starGeometry = new THREE.BufferGeometry();
+const starMaterial = new THREE.PointsMaterial({
+  color: 0xFFFFFF,
+  size: 0.1,
+});
+
+const starVertices = [];
+for (let i = 0; i < 10000; i++) {
+  const x = (Math.random() - 0.5) * 2000;
+  const y = (Math.random() - 0.5) * 2000;
+  const z = -Math.random() * 2000;
+  starVertices.push(x, y, z);
+}
+
+starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVertices, 3));
+const stars = new THREE.Points(starGeometry, starMaterial);
+scene.add(stars);
+
+camera.position.z = 1;
+
+function animateStars() {
+  requestAnimationFrame(animateStars);
+  stars.rotation.y += 0.0002;
+  renderer.render(scene, camera);
+}
+animateStars();
+
+function animateBrawlers() {
+  const brawlers = document.querySelectorAll('.brawler');
+  brawlers.forEach(brawler => {
+    brawler.style.animation = `float 3s ease-in-out infinite, pulse 2s ease-in-out infinite`;
+    const x = Math.random() * (window.innerWidth - 150);
+    const y = Math.random() * (window.innerHeight - 150);
+    brawler.style.transition = 'all 5s ease-in-out';
+    brawler.style.left = `${x}px`;
+    brawler.style.top = `${y}px`;
+  });
+}
+
+setInterval(animateBrawlers, 5000);
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script>
+
+</body></html>
